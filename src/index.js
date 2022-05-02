@@ -5,13 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import App_payload from "./App_payload";
 import App_shoppingList from "./App_shoppingList";
+import App_bootstrap from "./App_bootstrap";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
         {/*<App />*/}
         {/*<App_payload />*/}
-        <App_shoppingList/>
+        {/*<App_shoppingList/>*/}
+
+        <App_bootstrap/>
     </React.StrictMode>
 );
 
