@@ -1,12 +1,12 @@
 import './App.css';
 
-import comicsReducer from "./components_payload/comicsReducer";
+import comicsReducer from "./components_1payload/comicsReducer";
 import {createStore} from "redux";
 import {Provider} from "react-redux";
-import FirstComp from "./components_payload/FirstComp";
-import SecondComp from "./components_payload/SecondComp";
+import FirstComp from "./components_1payload/FirstComp";
+import SecondComp from "./components_1payload/SecondComp";
 
-function App_payload() {
+function App_1payload() {
     const store = createStore(comicsReducer);
     return (
         <div className="App">
@@ -19,4 +19,4 @@ function App_payload() {
     );
 }
 
-export default App_payload;
+export default App_1payload;

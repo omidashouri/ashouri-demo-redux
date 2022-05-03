@@ -3,18 +3,20 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import App_payload from "./App_payload";
-import App_shoppingList from "./App_shoppingList";
+import App_1payload from "./App_1payload";
+import App_2shoppingList from "./App_2shoppingList";
 import App_bootstrap from "./App_bootstrap";
+import App_3combinedReducer from "./App_3combinedReducer";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
         {/*<App />*/}
-        {/*<App_payload />*/}
-        {/*<App_shoppingList/>*/}
+        {/*<App_1payload />*/}
+        {/*<App_2shoppingList/>*/}
+        <App_3combinedReducer/>
 
-        <App_bootstrap/>
+        {/*<App_bootstrap/>*/}
     </React.StrictMode>
 );
 
