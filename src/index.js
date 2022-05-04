@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import App_1payload from "./App_1payload";
 import App_2shoppingList from "./App_2shoppingList";
-import App_bootstrap from "./App_bootstrap";
+import App_5bootstrap from "./App_5bootstrap";
 import App_3combinedReducer from "./App_3combinedReducer";
 import App_4persistRedux from "./App_4persistRedux";
 
@@ -16,9 +16,9 @@ root.render(
         {/*<App_1payload />*/}
         {/*<App_2shoppingList/>*/}
         {/*<App_3combinedReducer/>*/}
-        <App_4persistRedux/>
+        {/*<App_4persistRedux/>*/}
 
-        {/*<App_bootstrap/>*/}
+        <App_5bootstrap/>
     </React.StrictMode>
 );
 

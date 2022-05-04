@@ -1,9 +1,9 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap';
-import './img/CSS/test.css'
+import './components_5bootstrap/img/CSS/test.css'
 
-function App_bootstrap() {
+function App_5bootstrap() {
     return (
         <>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -60,25 +60,28 @@ function App_bootstrap() {
                     </div>
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img src={require("./img/car1.jfif")} className="d-block w-100" alt="..."/>
-                                <div className="carousel-caption d-none d-md-block">
-                                    <h5>First slide label</h5>
-                                    <p>Some representative placeholder content for the first slide.</p>
-                                </div>
+                            <img src={require("./components_5bootstrap/img/car1.jfif")} className="d-block w-100"
+                                 alt="..."/>
+                            <div className="carousel-caption d-none d-md-block">
+                                <h5>First slide label</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
                         </div>
                         <div className="carousel-item">
-                            <img src={require("./img/car2.jfif")} className="d-block w-100" alt="..."/>
-                                <div className="carousel-caption d-none d-md-block">
-                                    <h5>Second slide label</h5>
-                                    <p>Some representative placeholder content for the second slide.</p>
-                                </div>
+                            <img src={require("./components_5bootstrap/img/car2.jfif")} className="d-block w-100"
+                                 alt="..."/>
+                            <div className="carousel-caption d-none d-md-block">
+                                <h5>Second slide label</h5>
+                                <p>Some representative placeholder content for the second slide.</p>
+                            </div>
                         </div>
                         <div className="carousel-item">
-                            <img src={require("./img/car3.jfif")} className="d-block w-100" alt="..."/>
-                                <div className="carousel-caption d-none d-md-block">
-                                    <h5>Third slide label</h5>
-                                    <p>Some representative placeholder content for the third slide.</p>
-                                </div>
+                            <img src={require("./components_5bootstrap/img/car3.jfif")} className="d-block w-100"
+                                 alt="..."/>
+                            <div className="carousel-caption d-none d-md-block">
+                                <h5>Third slide label</h5>
+                                <p>Some representative placeholder content for the third slide.</p>
+                            </div>
                         </div>
                     </div>
                     <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
@@ -93,9 +96,32 @@ function App_bootstrap() {
                     </button>
                 </div>
             </header>
+            {/*my-5:margin to y axis:for top and bottom */}
+            <section className="main-heading my-5">
+                <div className={'text-center'}>
+                    <h1 className={'display-4'}>about us</h1>
+                    <hr className={'w-25 mx-auto'}/>
+                </div>
+            </section>
+            <div className={'container-fluid bg-primary'}>
+                <div className={'row my-2'}>
+                    <div className={'col-lg-6 col-md-6 col-12 col-xxl-6'}>
+                        <img className={'image-fluid about-image'}
+                            src={require("./components_5bootstrap/img/car3.jfif")} alt={'default image'}/>
+                    </div>
+                    <div className={'d-flex justify-content-center align-items-start flex-column col-lg-6 col-md-6 col-12 col-xxl-6'}>
+                       <h1>My Journey</h1>
+                        <p>dummy large text ............ ......... . .. . .. . . .. .
+                        .. .. . . . . . .. .. .. . .. . . . . . . .. . . .. . . .. . . .
+                        .. .. . . ... . . . . . . . . . . ..... . .. . . ... ... .... ... .
+                        .....</p>
+                        <button className={'btn btn-info'}>Check More</button>
+                    </div>
+                </div>
+            </div>
         </>
     );
 }
 
 
-export default App_bootstrap;
+export default App_5bootstrap;
