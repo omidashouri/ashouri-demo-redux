@@ -8,15 +8,17 @@ import Skills from "./containers/skills";
 import Resume from "./containers/resume";
 import Portfolio from "./containers/portfolio";
 import Contact from "./containers/contact";
+import Navbar from "./components/navBar";
 
 
-//npm install react-router-dom sass react-vertical-timeline-component rc-progress react-tsparticles tsparticles react-simple-animate
+//npm install react-router-dom sass react-vertical-timeline-component rc-progress react-tsparticles tsparticles react-simple-animate react-icons
 function App_portfolioCss() {
     return (
         <div className={'App_portfolioCss'}>
             {/*    particles js*/}
 
             {/*    nav bar component*/}
+            <Navbar/>
 
             {/*    main page */}
             <Routes>
