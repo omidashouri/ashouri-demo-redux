@@ -1,7 +1,7 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap';
-import './components_5bootstrap/img/CSS/test.css'
+import './img/CSS/test.css'
 
 function App_5bootstrap() {
     return (
@@ -60,7 +60,7 @@ function App_5bootstrap() {
                     </div>
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img src={require("./components_5bootstrap/img/car1.jfif")} className="d-block w-100"
+                            <img src={require("./img/car1.jfif")} className="d-block w-100"
                                  alt="..."/>
                             <div className="carousel-caption d-none d-md-block">
                                 <h5>First slide label</h5>
@@ -68,7 +68,7 @@ function App_5bootstrap() {
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <img src={require("./components_5bootstrap/img/car2.jfif")} className="d-block w-100"
+                            <img src={require("./img/car2.jfif")} className="d-block w-100"
                                  alt="..."/>
                             <div className="carousel-caption d-none d-md-block">
                                 <h5>Second slide label</h5>
@@ -76,7 +76,7 @@ function App_5bootstrap() {
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <img src={require("./components_5bootstrap/img/car3.jfif")} className="d-block w-100"
+                            <img src={require("./img/car3.jfif")} className="d-block w-100"
                                  alt="..."/>
                             <div className="carousel-caption d-none d-md-block">
                                 <h5>Third slide label</h5>
@@ -107,7 +107,7 @@ function App_5bootstrap() {
                 <div className={'row my-2'}>
                     <div className={'col-lg-6 col-md-6 col-12 col-xxl-6'}>
                         <img className={'image-fluid about-image'}
-                            src={require("./components_5bootstrap/img/car3.jfif")} alt={'default image'}/>
+                             src={require("./img/car3.jfif")} alt={'default image'}/>
                     </div>
                     <div className={'d-flex justify-content-center align-items-start flex-column col-lg-6 col-md-6 col-12 col-xxl-6'}>
                        <h1>My Journey</h1>

@@ -1,7 +1,7 @@
 import {createStore} from "redux";
 import {Provider} from "react-redux";
-import Homepage from "./components_3combinedReducer/Homepage";
-import rootReducer from "./components_3combinedReducer/rootReducer";
+import Homepage from "./Homepage";
+import rootReducer from "./rootReducer";
 
 function App_3combinedReducer() {
     const store = createStore(rootReducer);

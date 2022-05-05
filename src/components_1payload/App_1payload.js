@@ -1,10 +1,10 @@
-import './App.css';
+import '../App.css';
 
-import comicsReducer from "./components_1payload/comicsReducer";
+import comicsReducer from "./comicsReducer";
 import {createStore} from "redux";
 import {Provider} from "react-redux";
-import FirstComp from "./components_1payload/FirstComp";
-import SecondComp from "./components_1payload/SecondComp";
+import FirstComp from "./FirstComp";
+import SecondComp from "./SecondComp";
 
 function App_1payload() {
     const store = createStore(comicsReducer);

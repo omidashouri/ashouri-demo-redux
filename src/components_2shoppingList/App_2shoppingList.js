@@ -1,11 +1,11 @@
-import './App.css';
+import '../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Navbar from "./components_2shoppingList/Navbar";
-import Addcart from "./components_2shoppingList/Addcart";
+import Navbar from "./Navbar";
+import Addcart from "./Addcart";
 import {Provider} from "react-redux";
 import {createStore} from "redux";
-import cartReducer from "./components_2shoppingList/cartReducer";
-import ItemsList from "./components_2shoppingList/ItemsList";
+import cartReducer from "./cartReducer";
+import ItemsList from "./ItemsList";
 
 function App_2shoppingList() {
     const store = createStore(cartReducer);

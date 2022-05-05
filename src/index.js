@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import App_1payload from "./App_1payload";
-import App_2shoppingList from "./App_2shoppingList";
-import App_5bootstrap from "./App_5bootstrap";
-import App_3combinedReducer from "./App_3combinedReducer";
-import App_4persistRedux from "./App_4persistRedux";
+import App_1payload from "./components_1payload/App_1payload";
+import App_2shoppingList from "./components_2shoppingList/App_2shoppingList";
+import App_5bootstrap from "./components_5bootstrap/App_5bootstrap";
+import App_3combinedReducer from "./components_3combinedReducer/App_3combinedReducer";
+import App_4persistRedux from "./components_4persistRedux/App_4persistRedux";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
