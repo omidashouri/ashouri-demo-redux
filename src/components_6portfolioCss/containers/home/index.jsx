@@ -1,12 +1,18 @@
 import React from "react";
+import './styles.scss'
 
-
-const About = ()=>{
+const Home = ()=>{
     return(
-        <div>
-            About
-        </div>
+        <section className={'home'} id={'home'}>
+            <div className={"home__text-wrapper"}>
+                <h1>
+                    Hello, I am Omid Ashouri.
+                    <br/>
+                    Back End Developer.
+                </h1>
+            </div>
+        </section>
     )
 }
 
-export default About;
+export default Home;

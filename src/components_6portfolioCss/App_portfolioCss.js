@@ -1,10 +1,10 @@
 import React from "react";
-import './App_portfolioCss.css';
+import './App_portfolioCss.scss';
 import Particles from 'react-tsparticles'
 import {loadFull} from 'tsparticles'
 import {Routes, Route, useLocation} from "react-router-dom";
 import Home from "./containers/home";
-import About from "./containers/home";
+import About from "./containers/about";
 import Skills from "./containers/skills";
 import Resume from "./containers/resume";
 import Portfolio from "./containers/portfolio";
@@ -35,19 +35,22 @@ function App_portfolioCss() {
 
 
             {/*    nav bar component*/}
-            <Navbar/>
+            <div className={'App_portfolioCss__navbar-wrapper'}>
+                <Navbar/>
+            </div>
 
             {/*    main page */}
-            <Routes>
-                {/*    create all routes */}
-                <Route path={'/'} index element={<Home/>}/>
-                <Route path={'/about'} element={<About/>}/>
-                <Route path={'/skills'} element={<Skills/>}/>
-                <Route path={'/resume'} element={<Resume/>}/>
-                <Route path={'/portfolio'} element={<Portfolio/>}/>
-                <Route path={'/contact'} element={<Contact/>}/>
-
-            </Routes>
+            <div className={'App_portfolioCss__main-content-wrapper'}>
+                <Routes>
+                    {/*    create all routes */}
+                    <Route path={'/'} index element={<Home/>}/>
+                    <Route path={'/about'} element={<About/>}/>
+                    <Route path={'/skills'} element={<Skills/>}/>
+                    <Route path={'/resume'} element={<Resume/>}/>
+                    <Route path={'/portfolio'} element={<Portfolio/>}/>
+                    <Route path={'/contact'} element={<Contact/>}/>
+                </Routes>
+            </div>
         </div>
     );
 }

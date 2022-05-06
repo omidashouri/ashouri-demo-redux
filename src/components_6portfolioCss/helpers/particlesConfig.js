@@ -26,7 +26,8 @@ export default {
     },
     "fullScreen": {
         "enable": true,
-        "zIndex": 1
+        //set -1 to be back
+        "zIndex": -1
     },
     "detectRetina": true,
     "duration": 0,

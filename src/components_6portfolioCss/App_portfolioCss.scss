@@ -1,4 +1,23 @@
+.App_portfolioCss{
+    height: 100%;
 
+    &__navbar-wrapper {
+        position: absolute;
+        width: 100%;
+        top: 0;
+    }
+
+    &__main-content-wrapper {
+        height: calc(100% - 80px);
+        position: absolute;
+        width: 100%;
+        margin-top: 80px;
+    }
+}
+
+/*.App_portfolioCss__main-content-wrapper{
+    height: calc(100% - 80px);
+}*/
 
 
 /*root css*/
