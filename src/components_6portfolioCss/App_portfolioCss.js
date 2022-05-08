@@ -10,7 +10,8 @@ import Resume from "./containers/resume";
 import Portfolio from "./containers/portfolio";
 import Contact from "./containers/contact";
 import Navbar from "./components/navBar";
-import particlesConfig from "./helpers/particlesConfig";
+import particlesConfig from "./helper/particlesConfig";
+import Theme from "./components/theme";
 
 
 //npm install react-router-dom sass react-vertical-timeline-component rc-progress react-tsparticles tsparticles react-simple-animate react-icons
@@ -41,6 +42,7 @@ function App_portfolioCss() {
 
             {/*    main page */}
             <div className={'App_portfolioCss__main-content-wrapper'}>
+                <Theme/>
                 <Routes>
                     {/*    create all routes */}
                     <Route path={'/'} index element={<Home/>}/>
