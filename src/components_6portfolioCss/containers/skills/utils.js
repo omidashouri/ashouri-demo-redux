@@ -43,16 +43,16 @@ export const skillsData =
             data:
                 [
                     {
-                        skillName:'JAVA',
+                        skillName:'SQL',
                         percentage:'70'
                     },
                     {
-                        skillName:'PYTHON',
+                        skillName:'ORACLE',
                         percentage:'65'
                     },
                     {
-                        skillName:'KOTLIN',
-                        percentage:'35'
+                        skillName:'MONGODB',
+                        percentage:'90'
                     }
 
                 ]
