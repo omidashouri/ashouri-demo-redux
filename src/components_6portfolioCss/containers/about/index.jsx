@@ -5,6 +5,7 @@ import {personalData} from "./utils";
 import {DiApple, DiAndroid} from 'react-icons/di'
 import {FaDev, FaDatabase} from 'react-icons/fa'
 import './styles.scss'
+import {Animate} from 'react-simple-animate'
 
 const About = () => {
     return (
@@ -15,36 +16,51 @@ const About = () => {
             />
             <div className={'about__content'}>
                 <div className={'about__content__personalWrapper'}>
-                    <h3 className={'developerContent'}>BackEnd Developer</h3>
-                    <p>Job Profile</p>
-                    <h3 className={'personalContent'}>Personal Information</h3>
-                    <ul>
-                        {
-                            personalData.map((item, key) => (
-                                    <li key={key}>
-                                        <span className={'title'}>{item.label}</span>
-                                        <span className={'value'}>{item.value}</span>
-                                    </li>
+                    <Animate play={true} duration={1} delay={0}
+                             start={{transform: 'translateX(-800px)'}}
+                             end={{transform: 'translateX(0px)'}}
+                    >
+                        <h3 className={'developerContent'}>BackEnd Developer</h3>
+                        <p>Job Profile</p>
+                    </Animate>
+                    <Animate play={true} duration={1} delay={0}
+                             start={{transform: 'translateX(500px)'}}
+                             end={{transform: 'translateX(0px)'}}
+                    >
+                        <h3 className={'personalContent'}>Personal Information</h3>
+                        <ul>
+                            {
+                                personalData.map((item, key) => (
+                                        <li key={key}>
+                                            <span className={'title'}>{item.label}</span>
+                                            <span className={'value'}>{item.value}</span>
+                                        </li>
+                                    )
                                 )
-                            )
-                        }
-                    </ul>
+                            }
+                        </ul>
+                    </Animate>
                 </div>
                 <div className={'about__content__servicesWrapper'}>
-                    <div className={'about__content__servicesWrapper__innerContent'}>
-                        <div>
-                            <DiApple size={60} color={'var(--selected-theme-main-color)'}/>
+                    <Animate play={true} duration={1} delay={0}
+                             start={{transform: 'translateX(500px)'}}
+                             end={{transform: 'translateX(0px)'}}
+                    >
+                        <div className={'about__content__servicesWrapper__innerContent'}>
+                            <div>
+                                <DiApple size={60} color={'var(--selected-theme-main-color)'}/>
+                            </div>
+                            <div>
+                                <FaDatabase size={60} color={'var(--selected-theme-main-color)'}/>
+                            </div>
+                            <div>
+                                <DiAndroid size={60} color={'var(--selected-theme-main-color)'}/>
+                            </div>
+                            <div>
+                                <FaDev size={60} color={'var(--selected-theme-main-color)'}/>
+                            </div>
                         </div>
-                        <div>
-                            <FaDatabase size={60} color={'var(--selected-theme-main-color)'}/>
-                        </div>
-                        <div>
-                            <DiAndroid size={60} color={'var(--selected-theme-main-color)'}/>
-                        </div>
-                        <div>
-                            <FaDev size={60} color={'var(--selected-theme-main-color)'}/>
-                        </div>
-                    </div>
+                    </Animate>
                 </div>
             </div>
         </section>
