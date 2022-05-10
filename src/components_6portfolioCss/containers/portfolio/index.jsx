@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import ImageOne from '../../images/1.jpeg';
 import ImageTwo from '../../images/2.jpeg';
 import ImageThree from '../../images/3.jpeg';
@@ -7,9 +7,25 @@ import ImageFive from '../../images/5.jpeg';
 import PageHeaderContent from "../../components/pageHeaderContent";
 import {AiFillProject} from 'react-icons/ai'
 import {filterOptions, portfolioData} from "./utils";
+import './styles.scss'
 
 
 const Portfolio = () => {
+
+    const [filterValue, setFilterValue] = useState(1)
+    const [hoveredIndex, setHoveredIndex] = useState(null)
+    const filteredPortfolioData = filterValue === 1
+        ?
+        portfolioData
+        :
+        portfolioData
+            .filter((item) => item.sectionId === filterValue);
+
+    const handleFilter = (id) => {
+        setFilterValue(id);
+        console.log(id);
+    }
+
     return (
         <section id={'portfolio'} className={'portfolio'}>
             <PageHeaderContent headerText={'My Portfolio'} icon={<AiFillProject size={40}/>}/>
@@ -18,20 +34,36 @@ const Portfolio = () => {
                     {
                         filterOptions.map((option) =>
                             (
-                                <li key={option.id}>{option.label}</li>
+                                <li onClick={() => handleFilter(option.id)}
+                                    key={`filter${option.id}`}
+                                    className={option.id === filterValue ? 'active' : ''}
+                                >{option.label}</li>
                             )
                         )
                     }
                 </ul>
                 <div className={'portfolio__content__cards'}>
                     {
-                        portfolioData.map((item,key) =>
+                        filteredPortfolioData.map((item, key) =>
                             (
-                                <div key={key} className={'portfolio__content__cards__item'}>
-                                    <div className={'portfolio__content__cards__item__image-wrapper'}>
-                                        {/*<a>*/}
+                                <div onMouseEnter={() => setHoveredIndex(key)}
+                                     onMouseLeave={() => setHoveredIndex(null)}
+                                     key={key} className={'portfolio__content__cards__item'}>
+                                    <div className={'portfolio__content__cards__item__img-wrapper'}>
+                                        <a>
                                             <img src={item.image} alt={'project image'}/>
-                                        {/*</a>*/}
+                                        </a>
+                                    </div>
+                                    <div className={'overlay'}>
+                                        {
+                                            hoveredIndex === key && (
+                                                <div>
+                                                    <p>{item.projectName}</p>
+                                                    <button>Visit</button>
+                                                </div>
+                                            )
+                                        }
+
                                     </div>
                                 </div>
                             ))
