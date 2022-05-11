@@ -80,7 +80,7 @@
         }
       }
 
-      button{
+      button {
         cursor: pointer;
         padding: 10px 70px;
         font-size: 2rem;
@@ -90,7 +90,7 @@
         border-radius: 4px;
         font-weight: 500;
 
-        &:hover{
+        &:hover {
           color: #000000;
           background: var(--selected-theme-main-color);
         }
@@ -101,11 +101,11 @@
 
 
 @media only screen and (max-width: 768px) {
-  .contact__content__form{
+  .contact__content__form {
     text-align: center;
 
-    &__controlsWrapper{
-      grid-template-columns: repeat(1,1fr);
+    &__controlsWrapper {
+      grid-template-columns: repeat(1, 1fr);
       gap: 45px;
     }
   }
