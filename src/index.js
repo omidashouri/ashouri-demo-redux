@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom/client';
 // import './index.css';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter as Router} from "react-router-dom";
-import App_portfolioCss from "./components_6portfolioCss/App_portfolioCss";
+// import App_portfolioCss from "./components_6portfolioCss/App_portfolioCss"; for: portfolioCss
+import App_portfolioBootstrap from "./compponents_7portfolioBootstrap/App_portfolioBootstrap";
 
 
 
@@ -19,10 +20,11 @@ root.render(
         {/*<App_3combinedReducer/>*/}
         {/*<App_4persistRedux/>*/}
         {/*<App_5bootstrap/>*/}
-
-        <Router>
+        {/*<Router>
             <App_portfolioCss/>
-        </Router>
+        </Router>*/}
+
+        <App_portfolioBootstrap/>
 
     </React.StrictMode>
 );
