@@ -24,7 +24,9 @@ root.render(
             <App_portfolioCss/>
         </Router>*/}
 
-        <App_portfolioBootstrap/>
+        <Router>
+            <App_portfolioBootstrap/>
+        </Router>
 
     </React.StrictMode>
 );
