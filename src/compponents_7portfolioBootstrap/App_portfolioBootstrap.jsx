@@ -5,9 +5,10 @@ import Main from "./components/";
 import './css/master.css'
 
 
-//we have to remove  react-particles-js@3.6.0, "react-simple-animate": "^3.3.12",(react-simple-animate@3.3.12)
+//we have to remove:  react-particles-js@3.6.0 → it is deprecated, instead use  react-tsparticles
+//we have to remove: "react-simple-animate": "^3.3.12",(react-simple-animate@3.3.12)
 // #create-react-app .
-// npm install react-router-dom framer-motion react-particles-js vivus
+// npm install react-router-dom framer-motion react-tsparticles vivus
 function App_portfolioBootstrap() {
     return(
         <>
