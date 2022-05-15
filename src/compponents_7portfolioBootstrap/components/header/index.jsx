@@ -28,7 +28,7 @@ const Header = () => {
     return (
         <>
             {/*if cannot find image, then put it in public*/}
-            <Particles style={{position:'absolute'}}
+            {/*<Particles style={{position:'absolute'}}
             params={
                 {
                     particles:{
@@ -58,10 +58,10 @@ const Header = () => {
                     }
                 }
             }
-            />
+            />*/}
             <div className={'header'}>
                 <img src={OmidPic} alt={'Omid Ashouri picture'}/>
-                <MainTitle/>
+{/*                <MainTitle/>
                 <motion.div variants={container} initial={'hidden'} animate={'visible'} className="icons-wrapper">
                     <div style={{display: 'flex'}}>
                         <motion.div variants={item} className="item-1 item"></motion.div>
@@ -73,7 +73,7 @@ const Header = () => {
                         <motion.div variants={item} className="item-7 item"></motion.div>
                         <motion.div variants={item} className="item-8 item"></motion.div>
                     </div>
-                </motion.div>
+                </motion.div>*/}
             </div>
         </>
     )
