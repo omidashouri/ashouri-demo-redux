@@ -1,0 +1,4 @@
+body{
+    /*remove scroll on the x*/
+    overflow-x: hidden;
+}
