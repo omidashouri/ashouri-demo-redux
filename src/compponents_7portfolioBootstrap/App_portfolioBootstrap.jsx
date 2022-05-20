@@ -7,6 +7,7 @@ import './css/master.css'
 
 //we have to remove:  react-particles-js@3.6.0 → it is deprecated, instead use  react-tsparticles
 //we have to remove: "react-simple-animate": "^3.3.12",(react-simple-animate@3.3.12)
+// --> two above have conflict with 'react-share'
 // #create-react-app .
 // npm install react-router-dom framer-motion react-tsparticles vivus bootstrap react-share
 function App_portfolioBootstrap() {
