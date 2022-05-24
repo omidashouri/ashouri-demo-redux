@@ -5,6 +5,7 @@ import ProgressBarComponent from "./progressbar/";
 import Resume from "./resume";
 import Portfolio from "./portfolio";
 import Services from "./services";
+import Counter from "./counter";
 
 
 const Main = ()=>{

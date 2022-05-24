@@ -1,6 +1,7 @@
 import React from 'react'
 import './services.css'
 import { servicesContent } from './servicesContent'
+import Counter from "../counter";
 
 const Services = () => {
     return (
@@ -19,6 +20,7 @@ const Services = () => {
                     ))}
                 </div>
             </div>
+            <Counter/>
         </div>
     )
 }
