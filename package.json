@@ -26,9 +26,16 @@
     "redux": "^4.2.0",
     "redux-persist": "^6.0.0",
     "sass": "^1.51.0",
+    "swiper": "^6.0.2",
     "tsparticles": "^2.0.6",
     "vivus": "^0.4.6",
     "web-vitals": "^2.1.4"
+  },
+  "overrides": {
+    "react-share": {
+      "react": "18.1.0",
+      "react-dom": "18.1.0"
+    }
   },
   "scripts": {
     "start": "react-scripts start",

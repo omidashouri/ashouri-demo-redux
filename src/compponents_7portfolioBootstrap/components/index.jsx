@@ -6,6 +6,7 @@ import Resume from "./resume";
 import Portfolio from "./portfolio";
 import Services from "./services";
 import Counter from "./counter";
+import Testimonials from "./testimonials";
 
 
 const Main = ()=>{
@@ -17,6 +18,7 @@ const Main = ()=>{
             <Resume/>
             <Portfolio/>
             <Services/>
+            <Testimonials/>
         </>
     )
 }

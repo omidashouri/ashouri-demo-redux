@@ -9,7 +9,23 @@ import './css/master.css'
 //we have to remove: "react-simple-animate": "^3.3.12",(react-simple-animate@3.3.12)
 // --> two above have conflict with 'react-share'
 // #create-react-app .
-// npm install react-router-dom framer-motion react-tsparticles vivus bootstrap react-share react-countup
+/*"peerDependencies": {
+    "react": ">=17"
+}*/
+
+// for install "react-share" :
+// 1- remove 'react-share' from 'package.json'
+// 2- run npm install
+// 3- add ' "overrides": { "react-share": { "react": "18.1.0", "react-dom": "18.1.0" } } ' to the 'package.json' after 'dependencies'
+// 4- run npm install react-share
+// for import swiper:
+// 1- just install swiper@6.0.2
+// 2- for import just do as follow:
+// 3-   import {Navigation, Pagination, EffectFade, Virtual, EffectCoverflow} from 'swiper';
+//      import {Swiper, SwiperSlide} from "swiper/react";
+//      import SwiperCore from "swiper/core";
+//      import "swiper/swiper-bundle.min.css";
+// npm install react-router-dom framer-motion react-tsparticles vivus bootstrap react-share react-countup swiper@6.0.2
 function App_portfolioBootstrap() {
     return(
         <>
