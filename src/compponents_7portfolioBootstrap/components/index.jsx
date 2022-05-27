@@ -7,6 +7,7 @@ import Portfolio from "./portfolio";
 import Services from "./services";
 import Counter from "./counter";
 import Testimonials from "./testimonials";
+import Contacts from "./contacts";
 
 
 const Main = ()=>{
@@ -19,6 +20,7 @@ const Main = ()=>{
             <Portfolio/>
             <Services/>
             <Testimonials/>
+            <Contacts/>
         </>
     )
 }

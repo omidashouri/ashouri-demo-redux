@@ -25,7 +25,7 @@ import './css/master.css'
 //      import {Swiper, SwiperSlide} from "swiper/react";
 //      import SwiperCore from "swiper/core";
 //      import "swiper/swiper-bundle.min.css";
-// npm install react-router-dom framer-motion react-tsparticles vivus bootstrap react-share react-countup swiper@6.0.2
+// npm install react-router-dom framer-motion react-tsparticles vivus bootstrap react-share react-countup swiper@6.0.2 emailjs-com
 function App_portfolioBootstrap() {
     return(
         <>
