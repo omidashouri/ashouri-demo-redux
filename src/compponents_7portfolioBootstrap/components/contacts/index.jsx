@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import './contacts.css'
 import emailjs from '@emailjs/browser';
 import { useForm } from 'react-hook-form'
@@ -9,7 +9,7 @@ const template_ID = 'service_react_id'
 const user_ID = 'iffECWZz4qACZ3nCn'
 //10:40
 const Contacts = () => {
-  const [successMessage, setSuccessMessage] = useState('')
+/*  const [successMessage, setSuccessMessage] = useState('')
 
   const {
     register,
@@ -41,14 +41,28 @@ const Contacts = () => {
         )
       })
       .catch((err) => console.log(`Somthing went wrong ${err}`))
-  }
+  }*/
+
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_react_id', 'template_react_id', form.current, 'iffECWZz4qACZ3nCn')
+        .then((result) => {
+          console.log(result.text);
+        }, (error) => {
+          console.log(error.text);
+        });
+  };
 
   return (
     <div className='form-wrapper'>
       <div className='form-container'>
         <div className='form-card-gradient'></div>
         <h2>describe your project</h2>
-        <span className='success-message'>{successMessage}</span>
+        {/*<span className='success-message'>{successMessage}</span>
         <form className='form' onSubmit={handleSubmit(onSubmit)}>
           <div className='text-input'>
             <input
@@ -103,6 +117,15 @@ const Contacts = () => {
             )}
           </div>
           <button className='button'>SEND</button>
+        </form>*/}
+        <form ref={form} onSubmit={sendEmail}>
+          <label>Name</label>
+          <input type="text" name="user_name" />
+          <label>Email</label>
+          <input type="email" name="user_email" />
+          <label>Message</label>
+          <textarea name="message" />
+          <input type="submit" value="Send" />
         </form>
       </div>
     </div>
