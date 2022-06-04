@@ -48,7 +48,7 @@ const ProgressBar = (props) => {
     ]
 
     return (
-        <div className={'main-wrapper'}>
+        <div id={'skills'} className={'main-wrapper'}>
             <h1>My Skills</h1>
             <div className="row d-flex pb-5">
                 <div className="col-md-3 icon-wrapper pr-0">

@@ -18,7 +18,7 @@ const Testimonials = () => {
     );
 
     return (
-        <section className={'main-testimonials-wrapper'}>
+        <section id={'testimonials'} className={'main-testimonials-wrapper'}>
             <h1
                 style={{
                     textAlign: 'center',
