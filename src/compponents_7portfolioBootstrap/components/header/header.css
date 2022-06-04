@@ -13,7 +13,7 @@
 }
 
 .header img {
-    width: 20rem;
+    width: 10rem;
     border-radius: 50%;
     justify-self: center;
     align-self: flex-end;
@@ -23,9 +23,9 @@
 }
 
 #main-title {
-    padding: 2rem;
+    padding: 0.5rem;
     align-self: flex-start;
-    width: 43.75rem;
+    width: 40.75rem;
 }
 
 /********************** ICONS *******************************/
@@ -34,7 +34,7 @@
     display: flex;
     justify-content: center;
     align-self: flex-start;
-    padding: 0.7rem;
+    padding: 0.1rem;
     overflow: hidden;
 }
 
@@ -70,3 +70,23 @@
     background: url(icons/git-logo.svg) no-repeat;
 }
 
+
+/******************** MEDIA QUERY ****************************/
+
+@media (max-width: 670px) {
+    #main-title {
+        width: 33.75rem;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 460px) {
+    #main-title {
+        width: 23.75rem;
+    }
+
+    .item {
+        width: 20px;
+        height: 20px;
+        margin: 0.7rem;
+    }
+}

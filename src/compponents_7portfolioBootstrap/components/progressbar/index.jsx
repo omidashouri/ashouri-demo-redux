@@ -15,7 +15,7 @@ const ProgressBarComponent = () => {
     window.addEventListener('scroll',()=>{
         const scrollPosition = window.scrollY;
         // console.log(scrollPosition);
-        if(Math.round(scrollPosition)>=1400){
+        if(Math.round(scrollPosition)>=1300){
             setInterval(() => {
                 setHtmlState(Math.floor(1 * 90))
                 // setHtmlState(90)

@@ -6,7 +6,7 @@ const MainTitle = ()=>{
 
 
     useEffect(()=>{
-        new Vivus('main-title', {file: omidAnimate});
+        new Vivus('main-title', {duration: 200,file: omidAnimate});
     },[])
 
     return(
