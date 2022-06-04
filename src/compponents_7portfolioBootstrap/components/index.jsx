@@ -8,6 +8,7 @@ import Services from "./services";
 import Counter from "./counter";
 import Testimonials from "./testimonials";
 import Contacts from "./contacts";
+import Footer from "./footer";
 
 
 const Main = ()=>{
@@ -21,6 +22,7 @@ const Main = ()=>{
             <Services/>
             <Testimonials/>
             <Contacts/>
+            <Footer/>
         </>
     )
 }
