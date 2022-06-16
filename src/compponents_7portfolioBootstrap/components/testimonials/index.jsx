@@ -30,6 +30,7 @@ const Testimonials = () => {
                 my happy clients
             </h1>
 
+{/* latest->
             <Swiper
                 effect={'coverflow'}
                 grabCursor={true}
@@ -52,6 +53,7 @@ const Testimonials = () => {
                     </SwiperSlide>
                 ))}
             </Swiper>
+<-latest */}
             {/*<Swiper
                 spaceBetween={50}
                 slidesPerView={3}
